@@ -51,9 +51,12 @@ img {
 }
 .bgimgcss {
   background-image: url("bg-img.jpg");
-  background-size: cover;
+    background-size:100% 100vh;
   background-repeat: no-repeat;
   height:100%; /* set the height of the div */
+  -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
 }
 body {
   background-color: #E6E6FA;
@@ -63,7 +66,6 @@ body {
 <body>
 
       <div class="container-fluid">
-        <div class="container">
           <div class="row">
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
@@ -76,11 +78,10 @@ body {
                 </div>
               </div>
 
-
+              
             </div>
             <div class="col-sm-4"></div>
           </div>
-        </div>
       </div>
 
 
