@@ -1,240 +1,189 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
-* {
-  --dark: #393939;
-  --red: #d12229;
+body{
+    background: #11998e; 
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e); 
+    background: linear-gradient(to right, #38ef7d, #11998e); 
 }
 
-body {
-  margin: 0;
-  font-family: Roboto, Arial, Helvetica, sans-serif;
-  position: relative;
+.card {
+    position: relative;
+    height: 460px;
+    width: 300px;
+    background-color: #fff;
+    margin: 100px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.credit {
-  position: absolute;
-  top: 15px;
-  right: 10px;
-  border-radius: 10px;
-  padding: 10px;
-  background-color: rgb(248, 92, 113);
-      cursor: pointer;
-    z-index: 2;
-    overflow: hidden;
-}
-
-.credit a {
-  text-decoration: none;
-  color: #eee;
-  padding:10px;
-}
-
-.credit:after {
-  box-sizing: border-box;
-  content: "";
-  border: 8px solid;
-  border-color: transparent transparent transparent #eee;
-  width: 8px;
-  height: 8px;
-  position: absolute;
-  right: 1px;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: all 0.5s;
-}
-.credit:hover::after {
-  right: -3px;
-}
-
-.test {
-    background-color: #1769ff;
-    width: 100%;
-    height: 100%;
+.header {
     position: absolute;
-    top: 0;
-    left: -100%;
-    transition: .5s ease-in-out;
-    z-index: -1;
-}
-
-.credit:hover .test {
+    height: 220px;
+    width: 95%;
+    margin:0 auto;
     left: 0;
-}
-.business2 {
-  display: flex;
-  align-items: center;
-  min-height: 100vh;
-  justify-content: center;
-  background-color: #131417;
+    right: 0;
+    top: -30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: linear-gradient(to right, #1dd1a1, #1abc9c);
 }
 
-.business2 .front,
-.business2 .back {
-  background-color: var(--dark);
-  width: 280px;
-  height: 480px;
-  margin: 20px;
-  border-radius: 25px;
-  overflow: hidden;
-  position: relative;
+.header img {
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    left: 90px;
+    top: 22px;
 }
 
-.business2 svg {
-  width: 50px;
+.header h3 {
+    position: absolute;
+    font-family: sans-serif;
+    color: white;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    top: 118px;
+    left: 90px;
 }
 
-.business2 h1,
-.business2 h2,
-.business2 p {
-  margin: 0;
-  color: #eee;
+.header p {
+    position: absolute;
+    font-family: sans-serif;
+    color: rgb(236, 233, 233);
+    font-size: 13px;
+    top: 166px;
+    left: 90px
 }
 
-.business2 .red {
-  height: 35%;
-  background-color: var(--red);
+.body {
+    position: absolute;
+    height: 126px;
+    left: 5px;
+    right: 5px;
+    top: 52%;
+    border-radius: 12px;
 }
 
-.business2 .head {
-  display: flex;
-  justify-content: center;
-  padding: 25px 0;
+.body ul {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    
 }
 
-.business2 .head img {
-  width: 40px;
+.body ul li {
+    position: absolute;
+    list-style: none;
+    display: block;
+    height: 40px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    border-radius: 12px;
+    background-color: transparent;
+    transition: all .3s ease-in-out;
 }
 
-.business2 .head > div {
-  text-align: center;
-  margin: 0 10px;
-  text-transform: uppercase;
+.body ul li p,
+h3,
+i {
+    position: absolute;
 }
 
-.business2 .head > div p {
-  font-size: 0.8rem;
-  font-weight: 600;
+.body ul li h3 {
+    top: -17px;
+    left: 58px;
+    color: #16a085;
+    
 }
 
-.business2 .avatar {
-  position: absolute;
-  width: 50%;
-  left: 50%;
-  top: 100px;
-  transform: translate(-50%);
-  text-align: center;
+.body ul li p {
+    top: 14px;
+    left: 59px;
+    font-size: 12px;
+    font-family: sans-serif;
+    color: #16a085;
 }
 
-.business2 .img {
-  background-color: #bfc2c7;
-  padding: 10px;
-  box-sizing: border-box;
-  border-radius: 50%;
-  border: 6px solid var(--dark);
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.body ul li i {
+    left: 8px;
+    top: 7px;
+    color: #16a085;
+    font-size: 26px;
 }
 
-.business2 .img img {
-  width: 80%;
-  padding: 10px 0;
+.body ul li:nth-child(1) {
+    top: -16px;
 }
 
-.business2 .avatar p:nth-of-type(1) {
-  text-transform: uppercase;
-  font-weight: 900;
+.body ul li:nth-child(2) {
+    top: 26px;
 }
 
-.business2 .infos {
-  position: absolute;
-  bottom: 5%;
-  left: 5%;
+.body ul li:nth-child(3) {
+    top: 68px;
 }
 
-.business2 .infos > div {
-  display: flex;
-  margin: 5px;
+.body ul li:nth-child(1) i {
+    left: 12px;
 }
 
-.business2 .infos > div svg {
-  width: 25px;
-  height: 25px;
-  margin-right: 10px;
-  background-color: var(--red);
-  padding: 8px;
-  border-radius: 7px;
+.body li:hover {
+    background-color: #16a085;
+    cursor: pointer;
 }
 
-.business2 .infos > div p {
-  font-size: 0.8rem;
-  margin: 5px 0;
-  font-weight: 500;
+.body li:hover i{color:#fff}
+.body li:hover h3{color:#fff}
+.body li:hover p{color:#fff}
+/*footer*/
+
+.footer {
+    position: absolute;
+    height: 80px;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    border-radius: 12px;
+    width:95%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: linear-gradient(to right, #1dd1a1, #1abc9c);
 }
 
-/* back*/
-.business2 .back .top {
-  width: 100%;
-  box-sizing: border-box;
-  height: 70%;
-  background: url("https://raw.githubusercontent.com/MohcineDev/Business-Card/main/imgs/e.webp")
-    center;
-  filter: contrast(160%);
-  position: relative;
+.footer ul {
+    position: absolute;
+    left: -60px;
 }
 
-.business2 .back .top::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 10;
-  background: linear-gradient(rgba(71, 11, 11, 0.8), rgba(240, 8, 8, 0.5));
+.footer ul li {
+    display: inline-block;
+    margin-left: 60px;
 }
 
-.business2 .back .top {
-  position: relative;
+.footer ul li i {
+    font-size: 30px;
+    color: #000;
+    transition: all .3s ease-in;
 }
 
-.business2 .back .top div img {
-  width: 40px;
-  margin: 10px;
+.footer ul li:hover i {
+    transform: scale(0.9);
+    color: #fff;
+    cursor: pointer;
 }
 
-.business2 .back .top div {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  top: 40%;
-  left: 19%;
-  z-index: 11;
-  filter: contrast(80%);
-  text-transform: uppercase;
-}
+.credit a{
+    text-decoration: none;
+    color: #fff;
+    
+  }
 
-.webicon {
-  background-color: var(--dark);
-  border-radius: 50%;
-  width: 70%;
-  padding: 20px 0;
-  position: absolute;
-  top: calc(70% - 40px);
-  left: 15%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  .credit{
+    text-align: center;
+  }
 
-.webicon div {
-  background-color: var(--red);
-  border-radius: 50%;
-  padding: 5px 4px 2px 5px;
-}
-
-.business2 .back > p {
-  text-align: center;
-  margin-top: 30%;
-  color: var(--red);
-}
