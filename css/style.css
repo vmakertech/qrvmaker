@@ -1,8 +1,8 @@
 
 body{
     background: #11998e; 
-    background: -webkit-linear-gradient(to right, #38ef7d, #11998e); 
-    background: linear-gradient(to right, #38ef7d, #11998e); 
+    background: -webkit-linear-gradient(to right, gray, black); 
+    background: linear-gradient(to right, gray, black); 
 }
 
 .card {
@@ -25,7 +25,7 @@ body{
     top: -30px;
     border-radius: 12px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-image: linear-gradient(to right, #1dd1a1, #1abc9c);
+    background-image: linear-gradient(to right, #D90B31, #C71C25);
 }
 
 .header img {
@@ -41,11 +41,11 @@ body{
     position: absolute;
     font-family: sans-serif;
     color: white;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 600;
     letter-spacing: 1px;
-    top: 118px;
-    left: 90px;
+    top: 140px;
+    left: 30px;
 }
 
 .header p {
@@ -53,8 +53,8 @@ body{
     font-family: sans-serif;
     color: rgb(236, 233, 233);
     font-size: 13px;
-    top: 166px;
-    left: 90px
+    top: 175px;
+    left: 70px
 }
 
 .body {
@@ -97,7 +97,7 @@ i {
 .body ul li h3 {
     top: -17px;
     left: 58px;
-    color: #16a085;
+    color: #C81D26;
     
 }
 
@@ -106,13 +106,19 @@ i {
     left: 59px;
     font-size: 12px;
     font-family: sans-serif;
-    color: #16a085;
+    color: #C81D26;
 }
 
 .body ul li i {
     left: 8px;
     top: 7px;
-    color: #16a085;
+    color: #C81D26;
+    font-size: 26px;
+}
+.body ul li a {
+    left: 8px;
+    top: 7px;
+    color: #C81D26;
     font-size: 26px;
 }
 
@@ -133,7 +139,7 @@ i {
 }
 
 .body li:hover {
-    background-color: #16a085;
+    background-color: #C81D26;
     cursor: pointer;
 }
 
@@ -152,7 +158,7 @@ i {
     width:95%;
     margin: 0 auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-image: linear-gradient(to right, #1dd1a1, #1abc9c);
+    background-image: linear-gradient(to right, #D90B31, #C71C25);
 }
 
 .footer ul {
@@ -162,13 +168,24 @@ i {
 
 .footer ul li {
     display: inline-block;
-    margin-left: 60px;
+    margin-left: 45px;
 }
 
 .footer ul li i {
     font-size: 30px;
     color: #000;
     transition: all .3s ease-in;
+}
+.footer ul li a {
+    font-size: 26px;
+    text-decoration:none;
+    color: #000;
+    transition: all .3s ease-in;
+}
+.footer ul li:hover a {
+    transform: scale(0.9);
+    color: #fff;
+    cursor: pointer;
 }
 
 .footer ul li:hover i {
